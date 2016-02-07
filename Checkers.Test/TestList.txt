@@ -1,0 +1,58 @@
+﻿== GAME
+* 001 - can create game
+* 002, 003 - game can be initialised with checkers in start positions
+* 004 - game checks, if a checker can move to white cell
+* 005 - game checks, if a checker can move to occupied cell
+* 006 - game is over when no black checkers remained
+* 007 - game is over when no white checkers remained
+* 008 - ordinary checker moves on one cell
+* 009 - queen can move on more than one cell at once 
+* 010 - ordinary checker cannot move backwards
+* 011 - queen move only on diagonals
+
+012 - checker can take the opponent's checker
+* 013 - Can Define Enemy Coordinates
+014 -  take is possible, if there is a free cell behind the enemy
+
+* 015 - Can get checker Id
+* 016 - Can't get checker Id whne empty cell selected
+* 017 - No checker can move to unusable cell
+
+		take - usual checker can take only over one cell
+		take - opponent's checker is taken away from field
+		take - backwards is allowed
+		take - queen can land in any cell after the beaten checker
+		take is mandatory
+		cannot move other checkers, if take is possible
+		checks for winner - when no moves left for opponent
+		switches player after each move
+
+== CELL
+* 001 - can create cell
+* 002 - check if cell is usable
+* 003 - check if cell is empty
+
+== BOARD
+* 001 - can create board
+* 002 - can display board
+* 003 - does particular cell exist?
+		board can display checker at its initial coordinates
+		board checks, if cell is occupied
+
+== CHECKER
+* 001 - Can create a checker
+* 002 - Checker Can Be Moved To Specified Coordinates
+* 003 - Checker Properties are correct
+* 004, 005 - Checker can become Queen
+* 006, 007 - Checker changes its appearance, upon becoming Queen
+
+
+== PLAYER
+* 001 - Player Can Select Checker
+* 002, 003 - Player can select only own checker
+		player can set cell coordinates for a checker to move
+		player can surrender
+
+== MOVE
+* 001 - Can create move
+* 002 - Сan move ckecker
